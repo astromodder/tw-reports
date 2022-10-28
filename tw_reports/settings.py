@@ -75,8 +75,11 @@ WSGI_APPLICATION = 'tw_reports.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'tw_reports',
+        'USER': 'tw_reports',
+        'PASSWORD': 'c0ns0l3',
+        'HOST': 'localhost',
     }
 }
 
